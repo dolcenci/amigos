@@ -342,6 +342,91 @@
             }
         }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+ .loan-form-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .loan-form-container h2 {
+      text-align: center;
+      color: #1a237e;
+      margin-bottom: 20px;
+    }
+
+    .loan-form-container label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .loan-form-container input,
+    .loan-form-container select,
+    .loan-form-container textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .loan-form-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .loan-form-container button:hover {
+      background-color: #0f57c7;
+    }
+
+    @media (max-width: 600px) {
+      .loan-form-container {
+        padding: 20px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+        
     </style>
 </head>
 <body>
@@ -430,9 +515,47 @@
     </section>
 
 
+<div style="text-align: center;">
+  <iframe width="450" height="280" src="https://www.youtube.com/embed/IEEvYVKs4GA" 
+    title="Friendly Cash Loans Made Easy! VEED" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  </iframe>
+</div>
 
-    <iframe width="990" height="557" src="https://www.youtube.com/embed/IEEvYVKs4GA" title="Friendly Cash Loans Made Easy! VEED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
+
+
+    <div class="loan-form-container">
+    <h2>Apply for a Loan</h2>
+    <form action="submit-loan.php" method="POST">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+      <label for="amount">Loan Amount (ZAR)</label>
+      <input type="number" id="amount" name="amount" min="100" required>
+
+      <label for="reason">Reason for Loan</label>
+      <textarea id="reason" name="reason" rows="3" placeholder="e.g. school fees, business startup..." required></textarea>
+
+      <label for="repayment">Repayment Term</label>
+      <select id="repayment" name="repayment" required>
+        <option value="">Select</option>
+        <option value="30">30 Days</option>
+        <option value="60">60 Days</option>
+        <option value="90">90 Days</option>
+      </select>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
 
 
 
@@ -444,7 +567,7 @@
 
 
 
- <section class="testimonials">
+ <!--<section class="testimonials">
         <div class="testimonials-container">
             <h2 style="text-align: center; margin-bottom: 2rem;">What Our Clients Say</h2>
             <div class="testimonials-grid">
@@ -503,7 +626,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <footer class="footer">
         <div class="footer-container">
