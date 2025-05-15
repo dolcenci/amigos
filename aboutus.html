@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Amigos and Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Add this to your existing CSS */
+        .about-hero {
+            padding: 8rem 5% 4rem;
+            background: linear-gradient(135deg, #2563eb, #22c55e);
+            color: white;
+            text-align: center;
+        }
+
+        .founder-section {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            padding: 4rem 5%;
+            background: #fff;
+        }
+
+        .founder-image {
+            flex: 1;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .founder-bio {
+            flex: 2;
+            color: #1e293b;
+        }
+
+        .community-section {
+            background: linear-gradient(45deg, #ff6b6b, #ff9f43);
+            padding: 4rem 5%;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .history-timeline {
+            padding: 4rem 5%;
+            background: #f8fafc;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .timeline-icon {
+            width: 60px;
+            height: 60px;
+            background: #2563eb;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .location-section {
+            padding: 4rem 5%;
+            background: linear-gradient(45deg, #2d3436, #636e72);
+            color: white;
+            text-align: center;
+        }
+
+        .city-image {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 15px;
+            margin: 2rem auto;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            border: 3px solid #2563eb;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Amigos & Projects</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="#about" class="active">About</a>
+            <a href="#loans">Loans</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="about-hero">
+        <h1>Rooted in Carletonville, Growing With You</h1>
+        <p>Your trusted financial partner since 2015</p>
+    </section>
+
+    <section class="founder-section">
+        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Founder Peace" class="founder-image">
+        <div class="founder-bio">
+            <h2>Meet Peace - Our Visionary Founder</h2>
+            <p style="margin: 1rem 0; line-height: 1.6;">
+                Born and raised in Carletonville, Peace Mokoena established Amigos & Projects in 2015 with a simple mission: 
+                to provide fair and accessible financial solutions to our community. With over 15 years experience in 
+                microfinance, Peace has built a company that combines financial expertise with genuine care for our clients.
+            </p>
+            <div style="background: #e3fafc; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                <i class="fas fa-quote-left" style="color: #22c55e;"></i>
+                <em>"We don't just provide loans - we invest in people's dreams and our community's future."</em>
+            </div>
+        </div>
+    </section>
+
+    <section class="community-section">
+        <div>
+            <h3>Our Carletonville Roots</h3>
+            <p>Proudly serving our community for 8+ years</p>
+            <img src="https://images.unsplash.com/photo-1608500218866-308d70b2ca7a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" 
+                 alt="Carletonville Community" 
+                 style="border-radius: 10px; margin-top: 1rem;">
+        </div>
+        <div>
+            <h3>Community Impact</h3>
+            <ul style="list-style: none; line-height: 2;">
+                <li><i class="fas fa-check-circle" style="color: #22c55e;"></i> 500+ local businesses supported</li>
+                <li><i class="fas fa-check-circle" style="color: #22c55e;"></i> R2.5 million in community projects</li>
+                <li><i class="fas fa-check-circle" style="color: #22c55e;"></i> Annual financial literacy workshops</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="history-timeline">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Our Journey</h2>
+        <div class="timeline-item">
+            <div class="timeline-icon">2015</div>
+            <div>
+                <h3>Humble Beginnings</h3>
+                <p>Opened our first office in Carletonville CBD with 3 staff members</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-icon">2018</div>
+            <div>
+                <h3>Community Recognition</h3>
+                <p>Awarded Best Microfinance Provider in Gauteng West</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-icon">2023</div>
+            <div>
+                <h3>Digital Transformation</h3>
+                <p>Launched our online application platform serving nationwide</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-section">
+        <h2>Our Home in Carletonville</h2>
+        <p>Visit us at the heart of the city's financial district</p>
+        <img src="https://images.unsplash.com/photo-1597211833712-5e7f4d583efd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+             alt="Carletonville City View" 
+             class="city-image">
+        <div style="margin-top: 2rem;">
+            <i class="fas fa-map-marker-alt" style="font-size: 2rem;"></i>
+            <p>123 Khumalo Street<br>Carletonville, 2500<br>Open Mon-Fri: 8:30AM - 5PM</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 Amigos & Projects. All rights reserved</p>
+        <p style="margin-top: 1rem;">Proudly serving Carletonville since 2015</p>
+    </footer>
+</body>
+</html>
