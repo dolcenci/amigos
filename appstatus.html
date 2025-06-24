@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head content as index.html -->
+    <title>Application Status | Amigos & Projects</title>
+</head>
+<body>
+    <!-- Same header as index.html -->
+    
+    <section class="page-header">
+        <div class="container">
+            <h1>Check Your Application Status</h1>
+            <p>Track the progress of your loan application</p>
+        </div>
+    </section>
+
+    <section class="status-section">
+        <div class="container">
+            <div class="status-form">
+                <h2>Enter Your Application Details</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="applicationId">Application ID</label>
+                        <input type="text" id="applicationId" placeholder="Enter your application number">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" placeholder="Enter your last name">
+                    </div>
+                    <button type="submit" class="btn-primary">Check Status</button>
+                </form>
+            </div>
+
+            <div class="status-tracker">
+                <h2>Your Application Progress</h2>
+                <div class="tracker-steps">
+                    <div class="step completed">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Application Submitted</h4>
+                            <p>June 10, 2023 - 10:30 AM</p>
+                        </div>
+                    </div>
+                    <div class="step active">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Under Review</h4>
+                            <p>Currently being processed</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Approval Decision</h4>
+                            <p>Pending</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Funds Disbursed</h4>
+                            <p>Pending</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Same footer as index.html -->
+</body>
+</html>
+
+<style>
+.status-section {
+    padding: 4rem 0;
+}
+
+.status-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+}
+
+.status-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.status-tracker {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tracker-steps {
+    margin-top: 2rem;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+    opacity: 0.6;
+}
+
+.step.completed, .step.active {
+    opacity: 1;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.step.completed .step-number {
+    background: var(--primary);
+    color: white;
+}
+
+.step.active .step-number {
+    background: var(--secondary);
+    color: var(--dark);
+}
+
+.step-content h4 {
+    margin-bottom: 0.3rem;
+}
+
+.step-content p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .status-section .container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
